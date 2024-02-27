@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Toepassing</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Mijn eerste jQuery Toepassing</h1>
+    <div id="content">
+      <p>Klik op de knop om de tekstkleur te veranderen.</p>
+    </div>
+    <button id="changeColor">Verander Tekstkleur</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#changeColor").click(function () {
+          $("#content").css("color", "blue");
+        });
+      });
+    </script>
+    <noscript
+      >Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript
+      te activeren.</noscript
+    >
+  </body>
+</html>
